@@ -1,0 +1,32 @@
+name: Test Day 2
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Compile Python files
+        working-directory: week-01/day-02-persistent-conversation-memory/completed-project/trexovia-assistant
+        run: python -m compileall -q app.py memory.py tests
+
+      - name: Run tests
+        working-directory: week-01/day-02-persistent-conversation-memory/completed-project/trexovia-assistant
+        run: python -m unittest discover -s tests -v

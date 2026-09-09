@@ -20,6 +20,8 @@ Over four weeks, we will build a production-ready AI assistant step by step:
 | Lesson | Topic | Video | Resources |
 | --- | --- | --- | --- |
 | Week 1, Day 1 | Python Foundations | Coming soon | [Open lesson](week-01/day-01-python-foundations/README.md) |
+| Week 1, Day 2 | Persistent Conversation Memory | Coming soon | [Open lesson](week-01/day-02-persistent-conversation-memory/README.md) |
+| Week 1, Day 3 | Connect a Real LLM | Coming soon | [Open lesson](week-01/day-03-connect-a-real-llm/README.md) |
 
 New lesson resources will be added as the series progresses.
 
@@ -45,18 +47,20 @@ cd Trevoxia-assistant-resources
 
 ## Requirements
 
-- Python 3.10 or newer
+- Python 3.9 or newer
 - Git
 - A terminal
 - A code editor such as Visual Studio Code
+- An OpenAI API key beginning with Day 3
 
 ## Getting help
 
 If a command or code sample does not work:
 
 1. Compare your files with the lesson's `completed-project` folder.
-2. Run the automated tests shown in the lesson.
-3. Open a GitHub issue and include the lesson, command, error message, operating system, and Python version.
+2. Confirm `python` and `python -m pip` point to the same virtual environment.
+3. Run the compile check before the automated tests.
+4. Open a GitHub issue and include the lesson, command, error message, operating system, and Python version.
 
 ## License
 

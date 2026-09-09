@@ -1,0 +1,36 @@
+name: Test Day 3
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        working-directory: week-01/day-03-connect-a-real-llm/completed-project/trexovia-assistant
+        run: python -m pip install -r requirements.txt
+
+      - name: Compile Python files
+        working-directory: week-01/day-03-connect-a-real-llm/completed-project/trexovia-assistant
+        run: python -m compileall -q app.py llm.py memory.py tests
+
+      - name: Run offline tests
+        working-directory: week-01/day-03-connect-a-real-llm/completed-project/trexovia-assistant
+        run: python -m unittest discover -s tests -v
