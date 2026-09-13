@@ -22,6 +22,7 @@ Over four weeks, we will build a production-ready AI assistant step by step:
 | Week 1, Day 1 | Python Foundations | Coming soon | [Open lesson](week-01/day-01-python-foundations/README.md) |
 | Week 1, Day 2 | Persistent Conversation Memory | Coming soon | [Open lesson](week-01/day-02-persistent-conversation-memory/README.md) |
 | Week 1, Day 3 | Connect a Real LLM | Coming soon | [Open lesson](week-01/day-03-connect-a-real-llm/README.md) |
+| Week 1, Day 4 | Build the Browser Chat | Coming soon | [Open lesson](week-01/day-04-build-the-browser-chat/README.md) |
 
 New lesson resources will be added as the series progresses.
 
