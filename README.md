@@ -23,6 +23,7 @@ Over four weeks, we will build a production-ready AI assistant step by step:
 | Week 1, Day 2 | Persistent Conversation Memory | Coming soon | [Open lesson](week-01/day-02-persistent-conversation-memory/README.md) |
 | Week 1, Day 3 | Connect a Real LLM | Coming soon | [Open lesson](week-01/day-03-connect-a-real-llm/README.md) |
 | Week 1, Day 4 | Build the Browser Chat | Coming soon | [Open lesson](week-01/day-04-build-the-browser-chat/README.md) |
+| Week 1, Day 5 | Inspect and Export Conversation Memory | Coming soon | [Open lesson](week-01/day-05-inspect-and-export-memory/README.md) |
 
 New lesson resources will be added as the series progresses.
 
